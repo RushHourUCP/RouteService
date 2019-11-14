@@ -13,6 +13,10 @@ class Node:
     self.pos = pos
     self.edges = edges
 
+    def get_next_nodes(self):
+      """Get the next possible Nodes"""
+      return [edge.end for edge in this.edges]
+
 class Edge:
   """
   args:
